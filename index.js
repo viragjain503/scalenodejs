@@ -4,6 +4,7 @@ const port = 3000;
 const app = express();
 
 console.log(`worker pid=${process.pid}`);
+console.log( `run from alternate branch`);
 
 app.get("/heavy", (req, res) => {
   let total = 0;
